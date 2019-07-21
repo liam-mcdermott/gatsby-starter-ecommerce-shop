@@ -2,7 +2,7 @@
 import React from 'react'
 import {Header, Divider, Table} from 'semantic-ui-react'
 
-export default ({description, material, max_watt, bulb_qty, finish, bulb}) => (
+export default ({description}) => (
   <div>
     <Header as="h3">About this product</Header>
     <p>{description}</p>
@@ -19,23 +19,23 @@ export default ({description, material, max_watt, bulb_qty, finish, bulb}) => (
       <Table.Body>
         <Table.Row>
           <Table.Cell>Material</Table.Cell>
-          <Table.Cell>{material}</Table.Cell>
+          <Table.Cell></Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.Cell>Max watt.</Table.Cell>
-          <Table.Cell>{max_watt}</Table.Cell>
+          <Table.Cell></Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.Cell>Bulb qty.</Table.Cell>
-          <Table.Cell>{bulb_qty}</Table.Cell>
+          <Table.Cell></Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.Cell>Finish</Table.Cell>
-          <Table.Cell>{finish}</Table.Cell>
+          <Table.Cell></Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.Cell>Fitting</Table.Cell>
-          <Table.Cell>{bulb}</Table.Cell>
+          <Table.Cell></Table.Cell>
         </Table.Row>
       </Table.Body>
     </Table>

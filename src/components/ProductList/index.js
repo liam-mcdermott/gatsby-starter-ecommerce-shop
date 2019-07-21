@@ -6,24 +6,19 @@ import {Link} from 'gatsby'
 
 const mapProductsToItems = products =>
   products.map(
-    ({node: {name, id, meta, mainImage, background_colour, new: isNew}}) => {
+    ({node: {name, id, meta, mainImage}}) => {
       const price = meta.display_price.with_tax.formatted || null
       return {
         as: Link,
         to: `/product/${id}/`,
         childKey: id,
         image: (
-          <Image>
-            {isNew ? (
-              <Label color="red" ribbon style={{zIndex: '1'}}>
-                New!
-              </Label>
-            ) : null}
+          <Image>            
             <Img
               sizes={mainImage.childImageSharp.sizes}
               alt={name}
               style={{
-                background: `${background_colour || '#fafafa'}`,
+                background: '#fafafa',
               }}
             />
           </Image>

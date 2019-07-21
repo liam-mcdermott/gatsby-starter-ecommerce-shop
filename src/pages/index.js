@@ -20,9 +20,7 @@ const StoreIndex = ({location}) => {
           node {
             id
             name
-            description
-            background_colour
-            new
+            description   
             mainImageHref
             meta {
               display_price {
